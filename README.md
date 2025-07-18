@@ -1,24 +1,26 @@
 # 📊 InstaLike Insights
 
-This project focuses on predicting the number of **likes** an Instagram post may receive based on user engagement metrics such as followers, comments, hashtags, hours since posted. The goal is to estimate post-level engagement using machine learning techniques.
+InstaLike Insights is a machine learning project aimed at predicting the number of likes an Instagram post might receive. It uses essential engagement metrics like follower count, time since posting, and caption length to estimate performance, making it ideal for understanding basic influencer reach.
 
 ## 🛠️ Technologies Used
 - Python (Pandas, NumPy, Seaborn, Matplotlib)
-- Scikit-learn (Linear Regression, Random Forest, Gradient Boosting)
-- WordCloud for text analysis of captions
+- Scikit-learn (Linear Regression, Random Forest, Gradient Boosting, GridSearchCV)
+- Jupyter Notebook – for end-to-end development and visualization
 
 ## 🔄 Workflow Summary
-1. Dataset cleanup and preprocessing
-2. Exploratory analysis to understand feature relationships
-3. Feature scaling using StandardScaler
-4. Training and evaluating multiple regression models
-5. Performance evaluation using R² score
+- Loaded and cleaned the dataset
+
+- Conducted exploratory data analysis (EDA) with visualizations
+- Engineered numerical features like Caption Length
+- Scaled features using StandardScaler
+- Trained and compared multiple regression models
+- Tuned Random Forest using GridSearchCV
+- Evaluated performance using R² score
 
 ## 📌 Features Included
 - Followers
-- Comments, 
-- Hours Since Posted,
-- Hashtags
+- Caption Length 
+- Hours Since Posted
 
 ## 🎯 Target Variable
 - **Likes**
@@ -29,6 +31,6 @@ The one with the best performance was selected for final predictions.
 
 
 ## 📁 Project Contents
-- `insta_like_data.csv` – Input dataset
-- `insta_like_insights.ipynb` – Jupyter Notebook with full code
+- `instagram_like_data.csv` – Input dataset
+- `insta_like_insights-final-code.ipynb` – Jupyter Notebook with full code
 - `README.md` – Project overview and summary
